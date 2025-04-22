@@ -1,0 +1,22 @@
+#item price and quantity
+item_price = float(input("Enter item price: "))
+quantity = int(input("Enter quantity: "))
+total = item_price * quantity
+#discount if more than 500
+discount_applied = False
+if total > 500:
+    total *= 0.9
+    discount_applied = True
+    #shipping fee
+    shipping_fee= 0
+    free_shipping = False
+if total <= 200:
+    shipping_fee = 20
+else:
+    free_shipping = True
+    #summary
+    final_total=total + shipping_fee
+
+    print(f"\nTotal cost: ${final_total:.2f}")
+    print(f"Discount applied: {'Yes' if discount_applied else 'No'}")
+    print(f"Free shipping: {'Yes' if free_shipping else 'No'}")
