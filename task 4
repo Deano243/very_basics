@@ -1,0 +1,13 @@
+driver_age= int(input("what is your age?"))
+accident_count=int(input("how much accidents do you have?"))
+
+if driver_age <25:
+    premium=3000
+else:
+    premium=2000
+accident_cost=accident_count*500
+summary_cost=premium+accident_cost
+if summary_cost > 5000:
+    print("high risk")
+else:
+    print("standard")
