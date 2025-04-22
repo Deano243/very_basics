@@ -1,1 +1,13 @@
+salary = 4000
+net_income = salary - (salary * 0.22)
+print(net_income)
 
+rent = 3000
+savings = net_income - rent
+
+if net_income > 3000 and savings > 1000:
+    print("rent and save!")
+elif net_income > 3000 and savings < 1000:
+    print("just rent!")
+else:
+    print("not enough")
