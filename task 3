@@ -1,0 +1,8 @@
+age=int(input("what is your age? "))
+gold_pass=input("do you have a gold pass?y/n")
+is_royal=input("are you part of the royal family?")
+blacklist=input("are you in the blacklist?y/n")
+if age < 18 or (gold_pass == "n" and is_royal == "n") or blacklist == "y":
+    print ("you can not enter")
+else:
+    print ("enter to the castle")
